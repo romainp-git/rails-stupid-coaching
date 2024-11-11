@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row mt-3 justify-content-center">
+    <div class="col col-lg-8">
+      <h2>Stupid Coaching</h2>
+      <figure class="border-start border-5 px-3">
+        <blockquote class="blockquote">
+          <p><%= @question %></p>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+          <em>You</em>
+        </figcaption>
+      </figure>
+      <figure class="bg-warning-subtle-custom border-start border-5 px-3 py-1">
+        <blockquote class="blockquote">
+          <p><%= @answer %></p>
+        </blockquote>
+        <figcaption class="blockquote-footer mb-1">
+          <em>Your coach</em>
+        </figcaption>
+      </figure>
+      <%= link_to "Ask another question", ask_path, class:"text-decoration-none"%>
+    </div>
+  </div>
+</div>
